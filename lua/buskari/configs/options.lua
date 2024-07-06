@@ -1,7 +1,5 @@
 -- Vim options
-
 vim.g.mapleader = " "
-
 
 local o = vim.opt
 

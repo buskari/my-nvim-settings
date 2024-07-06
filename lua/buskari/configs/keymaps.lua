@@ -12,8 +12,7 @@ map("n", "<leader>r", "<cmd>source %<CR>")
 map("n", "<leader>w", "<cmd>w<CR>")
 -- map("n", "<leader>e", "<cmd>:Ex<CR>")
 map("n", "<leader>ll", "<cmd>:Lazy<CR>")
-map("n", "<leader>ps", "<cmd>PackerStatus<CR>")
-map("n", "<leader>pS", "<cmd>PackerSync<CR>")
+map("n", "<leader>mm", "<cmd>:Mason<CR>")
 
 map("i", "jj", "<ESC>") -- exit insert mode with jj 
 map("n", "<C-a>", "gg0vG$") -- select all
@@ -39,6 +38,7 @@ map("i", "(", "()<Left>")
 map("i", "<", "<><Left>")
 
 -- Visual mode
-map("v", "<leader>r", "\"hy<cmd>%s/<C-r>h//g<left><left>")
+map("v", "<leader>r", "\"hy:%s/<C-r>h//g<left><left>")
+map("v", "<C-s>", "<cmd>sort<CR>")
 map("v", "J", "<cmd>m '>+1<CR>gv=gv")
 map("v", "K", "<cmd>m '>-2<CR>gv=gv")
