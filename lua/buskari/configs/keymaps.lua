@@ -1,5 +1,5 @@
 -- keybindings
-function map(mode, lhs, rhs, opts)
+local function map(mode, lhs, rhs, opts)
 	local options = { noremap = true }
 	if opts then
 		options.vim.tbl_extend("force", options, opts)
@@ -14,8 +14,8 @@ map("n", "<leader>w", "<cmd>w<CR>")
 map("n", "<leader>ll", "<cmd>:Lazy<CR>")
 map("n", "<leader>mm", "<cmd>:Mason<CR>")
 
-map("i", "jj", "<ESC>") -- exit insert mode with jj 
-map("n", "<C-a>", "gg0vG$") -- select all
+map("i", "jj", "<ESC>")             -- exit insert mode with jj
+map("n", "<C-a>", "gg0vG$")         -- select all
 map("n", "<leader>nh", ":nohl<CR>") -- select all
 
 -- Window management
@@ -30,12 +30,12 @@ map("n", "<C-k>", "<C-w>k")
 map("n", "<C-l>", "<C-w>l")
 
 -- Automatically close pairs
-map("i", "'", "''<Left>")
-map("i", "\"", "\"\"<Left>")
-map("i", "{", "{}<Left>")
-map("i", "[", "[]<Left>")
-map("i", "(", "()<Left>")
-map("i", "<", "<><Left>")
+-- map("i", "'", "''<Left>")
+-- map("i", "\"", "\"\"<Left>")
+-- map("i", "{", "{}<Left>")
+-- map("i", "[", "[]<Left>")
+-- map("i", "(", "()<Left>")
+-- map("i", "<", "<><Left>")
 
 -- Visual mode
 map("v", "<leader>r", "\"hy:%s/<C-r>h//g<left><left>")

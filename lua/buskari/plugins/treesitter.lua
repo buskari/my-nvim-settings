@@ -9,12 +9,12 @@ return {
 	config = function()
 		local treesitter = require("nvim-treesitter.configs")
 
-		vim.api.nvim_create_autocmd("FileType", {
-			pattern = { "markdown" },
-			callback = function()
-				require("treesitter-context").disable()
-			end
-		})
+		--		vim.api.nvim_create_autocmd("FileType", {
+		--			pattern = { "markdown" },
+		--			callback = function()
+		--				require("treesitter-context").disable()
+		--			end
+		--		})
 
 		-- configure treesitter
 		treesitter.setup({ -- enable syntax highlighting
