@@ -8,6 +8,7 @@ o.relativenumber = true
 o.ignorecase = true
 o.smartcase = true
 o.wrap = false
+o.expandtab = true
 o.tabstop = 2
 o.shiftwidth = 2
 o.smartindent = true

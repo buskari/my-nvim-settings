@@ -22,6 +22,7 @@ return {
 				enable = true,
 				disable = { "csv" },
 			},
+      auto_install = true,
 			-- enable indentation
 			indent = { enable = true },
 			-- enable autotagging (w/ nvim-ts-autotag plugin)
@@ -57,8 +58,8 @@ return {
 			incremental_selection = {
 				enable = true,
 				keymaps = {
-					init_selection = "<C-space>",
-					node_incremental = "<C-space>",
+					init_selection = false,
+					node_incremental = false,
 					scope_incremental = false,
 					node_decremental = "<bs>",
 				},

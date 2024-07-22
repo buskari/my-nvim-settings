@@ -24,13 +24,9 @@ return {
 		--TODO: mapping to add files to quickfix
 
 		map('n', '<leader><leader>', builtin.find_files, opts)
-		map('n', '<C-p>', builtin.git_files, {})
 		map('n', '<leader>bf', builtin.buffers)
 		map('n', '<leader>qf', builtin.quickfix)
-		map('n', '<leader>fs', function()
-			builtin.grep_string({ search = vim.fn.input("Grep > ") })
-		end)
-
+		map('n', '<leader>fs', builtin.live_grep)
 		telescope.load_extension("fzf")
 		telescope.load_extension("file_browser")
 
